@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_income.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- Goal Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Name"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/goalNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter goal name"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:inputType="text" />
+
+    <!-- Goal Target Amount -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal Target Amount"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/goalAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter goal target amount"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:inputType="numberDecimal" />
+
+    <!-- Add Goal Button -->
+    <Button
+        android:id="@+id/addGoalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Goal"
+        android:backgroundTint="@color/background_button"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="16dp" />
+
+    <!-- Goal List -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goals"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/goalListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_button"
+        android:layout_marginTop="8dp" />
+
+
+</LinearLayout>

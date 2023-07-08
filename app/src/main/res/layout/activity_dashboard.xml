@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".DashboardActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXPENSE TOTAL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="0dp" />
+    <TextView
+        android:id="@+id/expenseSumTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/lime_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/background_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INCOME TOTAL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="0dp" />
+    <TextView
+        android:id="@+id/incomeSumTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/lime_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/background_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GOALS IN PROGRESS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="0dp" />
+    <TextView
+        android:id="@+id/goalsInProgressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/lime_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/background_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/expenseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Expenses"
+            android:padding="25dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/background_button"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/incomeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Income"
+            android:padding="25dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/background_button"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/goalButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Goals"
+            android:padding="25dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/background_button"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/statsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Stats"
+            android:padding="25dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/background_button"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Refresh"
+        android:backgroundTint="@color/blue_color"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Sign Out"
+        android:backgroundTint="@color/red_color"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

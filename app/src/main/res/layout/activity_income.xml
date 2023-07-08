@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Income"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/incomeNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Income Name"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/incomeAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Income Amount"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/addIncomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/background_button"
+        android:textColor="@color/text_color"
+        android:text="Add" />
+
+    <ListView
+        android:id="@+id/incomeListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_button"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

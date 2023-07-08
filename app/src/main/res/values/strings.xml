@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HomeApp</string>
+    <string name="expense_sum">Total Expenses: %d</string>
+    <string-array name="filter_options_array">
+        <item>No filter</item>
+        <item>High to Low</item>
+        <item>Low to High</item>
+    </string-array>
+    <string name="filter_prompt">Select Filter</string>
+    <string name="splash_text">HomeApp by InnerDev</string>
+</resources>

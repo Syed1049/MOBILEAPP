@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="16dp"
+    tools:context=".ExpenseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/expenseNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Expense Name"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/expenseAmountEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Expense Amount"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/addExpenseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:backgroundTint="@color/background_button"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/expenseTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <!-- Table header row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expense Name"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expense Amount"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Add Remove and Update Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/removeExpenseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/background_button"
+            android:text="Remove" />
+
+        <Button
+            android:id="@+id/updateExpenseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_button"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</LinearLayout>
